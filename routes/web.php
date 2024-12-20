@@ -8,3 +8,4 @@ Route::get('/', function () {
 });
 
 Route::get('/', [AccueilController::class, 'index'])->name('accueil');
+Route::post('/accueil', [AccueilController::class, 'store'])->name('accueil.store');
