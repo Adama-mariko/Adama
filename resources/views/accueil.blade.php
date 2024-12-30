@@ -1,6 +1,6 @@
 @extends('template')
 
-@section('title', 'Accueil - Mon Portfolio')
+@section('title', 'Mon Portfolio')
 
 @section('content')
     <!-- Section Hero -->
@@ -10,7 +10,9 @@
             <p>En tant que développeur débutant passionné par le monde de la technologie, je me spécialise dans la création d'applications web et mobiles. Actuellement en formation sur des outils modernes tels que Flutter, WordPress, JSON et Laravel, j’ai déjà une solide maîtrise de PHP, HTML et CSS. Toujours curieux et en quête d'innovation, j'aime repousser les limites de la programmation pour créer des expériences exceptionnelles. En dehors du code, je suis également un grand amateur de football, une passion qui m'apprend la persévérance et le travail d'équipe. Diplômé d'un Bac D, je suis prêt à relever tous les défis du développement !</p>
             <a href="#projets" class="btn">Découvrir mes projets</a>
         </div>
-        <img src="{{ asset('images/adama.jpg') }}" alt="mon joli image" class="image" width="25%">
+        <div class="droit">
+            <img src="{{ asset('images/adama.jpg') }}" alt="mon joli image">
+        </div>
     </section>
 
     <!-- Section compétences avec Slider -->

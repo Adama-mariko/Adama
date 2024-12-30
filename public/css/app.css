@@ -46,6 +46,13 @@ header nav ul li a:hover {
 
 /* Section Hero */
 
+.hero{
+    height: calc(100vh - 7rem);
+    background-color: bisque;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+}
  .hero h1 {
     font-size: 2.5em;
     margin-bottom: 10px;
@@ -69,6 +76,15 @@ header nav ul li a:hover {
 .hero .btn:hover {
     background-color: #ddd;
 } 
+.accueil{
+    height: 100%;
+}
+.accueil .droit img{
+    position: absolute;
+    bottom: 0;
+    right: 0.5%;
+    width: 0;
+}
 
 /* Sections */
 section {
@@ -121,15 +137,6 @@ footer {
     padding: 20px;
     background-color: #333;
     color: #fff;
-}
-
-.image{
-    position: relative;
-    border-radius: 8px; /* Coins arrondis */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
-    top: auto;
-    right: -25%;
-    
 }
 .accueil{
     flex: 1; /* Le texte occupe l'espace restant */
@@ -418,4 +425,43 @@ input:focus, textarea:focus {
     width: auto; /* L'image prend toute la largeur du conteneur */
     max-width: 50%;/*imiter la largeur maximale de l'image */
     height: auto; /* Maintenir le ratio de l'image */
+}
+.footer span{
+    margin-right: 1rem;
+}
+.footer-contenaire{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    color: #fff;
+}
+.footer-center h3{
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+.footer-center div{
+  font-size: 1rem;
+  color: #abbaac;
+}
+.fooetr-center a:link,
+.footer-center a:visited{
+    display: block;
+    color: #ccc;
+    font-size: 1.4rem;
+    transform: 0.6s;
+}
+.footer-center a:hover{
+    color: rgba(91, 224, 202, 0.5)
+}
+@media only screen and (max-width: 998px){
+    .footer-contenaire{
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 2rem;
+    }
+}
+@media only screen and (max-width: 778px){
+    .footer-contenaire{
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
+    }
 }
